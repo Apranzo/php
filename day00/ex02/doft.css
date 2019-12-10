@@ -1,0 +1,144 @@
+html {
+	background-color: #505050;
+}
+.u-1of3 {
+	width: 33.3333% !important;
+	flex: none !important;
+}
+
+.HolyGrail {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.HolyGrail-body {
+	display: flex;
+	flex: 1;
+}
+
+.row { width: 100%; }
+
+/*.col { display: table-cell; text-align: center; vertical-align: middle; padding: 1em 0 1em 0 ; }*/
+
+
+.HolyGrail-content {
+	flex: 2;
+}
+
+.card {
+	box-shadow:  0.3vw 0.6vh 0.5em 0.5vh black;
+	margin: 1vw 1vw 1vw 1vw;
+	background-color:#909090;
+	border-radius: 0.5vh;
+}
+
+.content {
+	height: 595px;
+	width: 1045px;
+	margin: 1vw auto auto auto;
+	padding: 0;
+}
+
+.content > img {
+	margin-top: 9px;
+}
+
+.HolyGrail-nav, .HolyGrail-ads {
+	flex: 1 0 15vw;
+	height: 700px;
+}
+
+.HolyGrail-nav {
+	order: -1;
+}
+
+.brick {
+	margin: 8px;
+	height: 64px;
+	background-repeat: repeat;
+	background-image: url("resources/brick.jpg");
+}
+
+.right {
+	float: right;
+}
+
+footer {
+	width: 100%;
+}
+
+.blood {
+	text-shadow:  2px 2px 3px red;
+}
+
+.inp input {
+	width: 70%;
+}
+.inp button {
+	height: 26px;
+}
+
+.inp {
+	position: absolute;
+	background-color: #88FF89;
+	width: 400px;
+	height: 164px;
+	bottom: 24px;
+	left: 5vw;
+	padding-top: 16px;
+	padding-left: 12px;
+	text-align: left;
+}
+
+.left {
+	float: left;
+}
+.col {
+	padding-top: 16px;
+	padding-bottom: 12px;
+	width: 140px;
+	height: 460px;
+}
+
+.col > .row > img {
+	width: auto;
+	height: 80px;
+}
+
+header {
+	width: 100%;
+}
+.logo {
+	padding-left: 1em;
+	height: 10vh;
+}
+
+.loupe {
+	height: 12vh;
+	position: absolute;
+	top: 1vh;
+}
+.reload {
+	height: 2vh;
+	margin-bottom: 0;
+	position: absolute;
+	right: 0.8%;
+	top: 10%;
+}
+.close {
+	height: 2vh;
+	float: right;
+	margin-bottom: 0;
+	position: absolute;
+	right: 0.8%;
+	bottom: 10%;
+}
+.header {
+	/*min-width: 1024px;*/
+	position: relative;
+	height: 11vh;
+	margin: 1vh auto 1vh auto;
+	width: 1400px;
+}
+.center { display: block; margin: auto; text-align: center; }

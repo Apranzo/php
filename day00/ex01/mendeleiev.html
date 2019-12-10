@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basics</title>
+	<style>
+
+		html {
+			font-size: 1vw;
+		}
+		body {
+			background-color: cornflowerblue;
+			margin: 0 1em 0 1em;
+		}
+		hr {
+			margin: 0.5em auto 0.5em auto;
+		}
+
+		.title {
+			color: white;
+			width: 100%;
+			font-size: 600%;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+		}
+
+		.table { width: 100%; display: table; table-layout: fixed; border-spacing: 0.1em; color: #3a6fce}
+		.row { width: 100%; display: table-row; }
+
+		.col { display: table-cell; text-align: center; vertical-align: middle; padding: 1em 0 1em 0 ; empty-cells: hide; background-color: pink}
+		.col.borderRless {border-right: none}
+		.col.borderLless {border-left: none}
+		.col.borderless {border: none}
+
+		.subtit {
+			color: #c0ffe9;
+			font-size: 1.4em;
+			position: absolute;
+			top: -0.3em;
+		}
+		.elem {
+			font-weight: bold;
+		}
+		.num {
+			vertical-align: -0.4em; font-size: 0.5em; padding-right: 0.2em;
+		}
+		.atomic {
+			vertical-align: 1em; font-size: 0.5em;
+			position: absolute; padding-left: 0.2em
+		}
+		h1 {
+			margin: 2vw auto 3vw auto;
+		}
+		.colspan { position: absolute; width: 100%;}
+		.logo {
+			width: 1em;
+			height: 1em;
+			padding-bottom: 1.5em;
+		}
+
+
+	</style>
+</head>
+<body>
+
+<div class="title">
+	<h1>Dream00</h1>
+	<img class="logo" src="https://image.flaticon.com/icons/svg/112/112739.svg" alt="logo">
+</div>
+
+<div class="table" contenteditable>
+	<div class="row">
+		<div class="col"><span class="num">1</span><span class="elem">H</span><span class="atomic">1.0</span></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"><span class="num">2</span><span class="elem">He</span><span class="atomic">4.0</span></div>
+	</div>
+	<div class="row">
+		<div class="col"><span class="num">3</span><span class="elem">Li</span><span class="atomic">6.94</span></div>
+		<div class="col"><span class="num">4</span><span class="elem">Mg</span><span class="atomic">9.0</span></div>
+		<div class="col borderless"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"><span class="num">5</span><span class="elem">B</span><span class="atomic">10.81</span></div>
+		<div class="col"><span class="num">6</span><span class="elem">C</span><span class="atomic">12.01</span></div>
+		<div class="col"><span class="num">7</span><span class="elem">N</span><span class="atomic">14.0</span></div>
+		<div class="col"><span class="num">8</span><span class="elem">O</span><span class="atomic">15.99</span></div>
+		<div class="col"><span class="num">9</span><span class="elem">F</span><span class="atomic">18.99</span></div>
+		<div class="col"><span class="num">10</span><span class="elem">Ne</span><span class="atomic">20.18</span></div>
+	</div>
+
+	<div class="row">
+		<div class="col"><span class="num">11</span><span class="elem">Na</span><span class="atomic">22.99</span></div>
+		<div class="col"><span class="num">12</span><span class="elem">Mg</span><span class="atomic">24.30</span></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="col"><span class="num">5</span><span class="elem">Al</span><span class="atomic">26.98</span></div>
+		<div class="col"><span class="num">6</span><span class="elem">Si</span><span class="atomic">28.08</span></div>
+		<div class="col"><span class="num">7</span><span class="elem">P</span><span class="atomic">30.97</span></div>
+		<div class="col"><span class="num">8</span><span class="elem">S</span><span class="atomic">32.06</span></div>
+		<div class="col"><span class="num">9</span><span class="elem">Cl</span><span class="atomic">35.45</span></div>
+		<div class="col"><span class="num">10</span><span class="elem">Ar</span><span class="atomic">39.95</span></div>
+	</div>
+	<div class="row">
+		<div class="col"><span class="num">19</span><span class="elem">K</span><span class="atomic">39.09</span></div>
+		<div class="col"><span class="num">20</span><span class="elem">Ca</span><span class="atomic">40.78</span></div>
+		<div class="col"><span class="num">21</span><span class="elem">Sc</span><span class="atomic">4.95</span></div>
+		<div class="col"><span class="num">22</span><span class="elem">Ti</span><span class="atomic">47.86</span></div>
+		<div class="col"><span class="num">23</span><span class="elem">V</span><span class="atomic">50.94</span></div>
+		<div class="col"><span class="num">24</span><span class="elem">Cr</span><span class="atomic">51.99</span></div>
+		<div class="col"><span class="num">25</span><span class="elem">Mn</span><span class="atomic">54.93</span></div>
+		<div class="col"><span class="num">26</span><span class="elem">Fe</span><span class="atomic">55.84</span></div>
+		<div class="col"><span class="num">27</span><span class="elem">Co</span><span class="atomic">58.93</span></div>
+		<div class="col"><span class="num">28</span><span class="elem">Ni</span><span class="atomic">58.693  </span></div>
+		<div class="col"><span class="num">29</span><span class="elem">Cu</span><pan class="atomic">63.54 </pan></div>
+		<div class="col"><span class="num">30</span><span class="elem">Zn</span><span class="atomic">65.38 </span></div>
+		<div class="col"><span class="num">31</span><span class="elem">Ga</span><span class="atomic">69.72 </span></div>
+		<div class="col"><span class="num">32</span><span class="elem">Ge</span><span class="atomic">72.63</span></div>
+		<div class="col"><span class="num">33</span><span class="elem">As</span><span class="atomic">74.92</span></div>
+		<div class="col"><span class="num">34</span><span class="elem">Se</span><span class="atomic">78.97</span></div>
+		<div class="col"><span class="num">35</span><span class="elem">Br</span><span class="atomic">79.90</span></div>
+		<div class="col"><span class="num">36</span><span class="elem">Kr</span><span class="atomic">83.79</span></div>
+	</div>
+	<div class="row">
+		<div class="col"><span class="num">37</span><span class="elem">Rb</span><span class="atomic">85.46</span></div>
+		<div class="col"><span class="num">38</span><span class="elem">Sr</span><span class="atomic">87.30</span></div>
+		<div class="col"><span class="num">39</span><span class="elem">Y</span><span class="atomic">88.90</span></div>
+		<div class="col"><span class="num">40</span><span class="elem">Zr</span><span class="atomic">91.22</span></div>
+		<div class="col"><span class="num">41</span><span class="elem">Nb</span><span class="atomic">92.90</span></div>
+		<div class="col"><span class="num">42</span><span class="elem">Mo</span><span class="atomic">95.95</span></div>
+		<div class="col"><span class="num">42</span><span class="elem">Tc</span><span class="atomic">97</span></div>
+		<div class="col"><span class="num">44</span><span class="elem">Ru</span><span class="atomic">101</span></div>
+		<div class="col"><span class="num">45</span><span class="elem">Rh</span><span class="atomic">102.91</span></div>
+		<div class="col"><span class="num">46</span><span class="elem">Pd</span><span class="atomic">106.42</span></div>
+		<div class="col"><span class="num">47</span><span class="elem">Ag</span><span class="atomic">107.87</span></div>
+		<div class="col"><span class="num">48</span><span class="elem">Cd</span><span class="atomic">112.41</span></div>
+		<div class="col"><span class="num">49</span><span class="elem">In</span><span class="atomic">114.82</span></div>
+		<div class="col"><span class="num">50</span><span class="elem">Sn</span><span class="atomic">118.71</span></div>
+		<div class="col"><span class="num">51</span><span class="elem">Sb</span><span class="atomic">121.76</span></div>
+		<div class="col"><span class="num">52</span><span class="elem">Te</span><span class="atomic">127.60</span></div>
+		<div class="col"><span class="num">53</span><span class="elem">I</span><span class="atomic">126.90</span></div>
+		<div class="col"><span class="num">54</span><span class="elem">Xe</span><span class="atomic">131.29</span></div>
+	</div>
+	<div class="row">
+		<div class="col"><span class="num">55</span><span class="elem">Cs</span><span class="atomic">132.91</span></div>
+		<div class="col"><span class="num">56</span><span class="elem">Ba</span><span class="atomic">137.33</span></div>
+		<div class="col"><span class="num">57</span><span class="elem">La</span><span class="atomic">138.91</span></div>
+		<div class="col"><span class="num">72</span><span class="elem">Hf</span><span class="atomic">178.49</span></div>
+		<div class="col"><span class="num">73</span><span class="elem">Ta</span><span class="atomic">180.95</span></div>
+		<div class="col"><span class="num">74</span><span class="elem">W</span><span class="atomic">183.84</span></div>
+		<div class="col"><span class="num">75</span><span class="elem">Re</span><span class="atomic">186.21</span></div>
+		<div class="col"><span class="num">76</span><span class="elem">Os</span><span class="atomic">190.23</span></div>
+		<div class="col"><span class="num">77</span><span class="elem">Ir</span><span class="atomic">1992.22</span></div>
+		<div class="col"><span class="num">78</span><span class="elem">Pt</span><span class="atomic">195.08</span></div>
+		<div class="col"><span class="num">79</span><span class="elem">Au</span><span class="atomic">196.97</span></div>
+		<div class="col"><span class="num">80</span><span class="elem">Hg</span><span class="atomic">200.59</span></div>
+		<div class="col"><span class="num">81</span><span class="elem">Tl</span><span class="atomic">204.38</span></div>
+		<div class="col"><span class="num">82</span><span class="elem">Pb</span><span class="atomic">207.2</span></div>
+		<div class="col"><span class="num">83</span><span class="elem">Bi</span><span class="atomic">208.98</span></div>
+		<div class="col"><span class="num">84</span><span class="elem">Po</span><span class="atomic">209</span></div>
+		<div class="col"><span class="num">85</span><span class="elem">At</span><span class="atomic">210</span></div>
+		<div class="col"><span class="num">86</span><span class="elem">Rn</span><span class="atomic">222</span></div>
+	</div>
+	<div class="row">
+		<div class="col"><span class="num">87</span><span class="elem">Fr</span><span class="atomic">223</span></div>
+		<div class="col"><span class="num">88</span><span class="elem">Ra</span><span class="atomic">226</span></div>
+		<div class="col"><span class="num">89</span><span class="elem">Ac</span><span class="atomic">227</span></div>
+		<div class="col"><span class="num">104</span><span class="elem">Rf</span><span class="atomic">267</span></div>
+		<div class="col"><span class="num">105</span><span class="elem">Db</span><span class="atomic">268</span></div>
+		<div class="col"><span class="num">106</span><span class="elem">Sg</span><span class="atomic">269</span></div>
+		<div class="col"><span class="num">107</span><span class="elem">Bh</span><span class="atomic">270</span></div>
+		<div class="col"><span class="num">108</span><span class="elem">Hs</span><span class="atomic">269</span></div>
+		<div class="col"><span class="num">109</span><span class="elem">Mt</span><span class="atomic">278</span></div>
+		<div class="col"><span class="num">110</span><span class="elem">Ds</span><span class="atomic">281</span></div>
+		<div class="col"><span class="num">111</span><span class="elem">Rg</span><span class="atomic">282</span></div>
+		<div class="col"><span class="num">112</span><span class="elem">Cn</span><span class="atomic">285</span></div>
+		<div class="col"><span class="num">113</span><span class="elem">Nh</span><span class="atomic">286</span></div>
+		<div class="col"><span class="num">114</span><span class="elem">Fl</span><span class="atomic">289</span></div>
+		<div class="col"><span class="num">115</span><span class="elem">Mc</span><span class="atomic">290</span></div>
+		<div class="col"><span class="num">116</span><span class="elem">Lv</span><span class="atomic">293</span></div>
+		<div class="col"><span class="num">117</span><span class="elem">Ts</span><span class="atomic">294</span></div>
+		<div class="col"><span class="num">118</span><span class="elem">Og</span><span class="atomic">294</span></div>
+	</div>
+	<div class="row">
+		<div class="col borderRless"></div>
+		<div class="col borderRless borderLless"><div class="colspan"><span class="subtit" style="left: 3.2vw">Lan­thanide</span></div></div>
+		<div class="col borderLless"></div>
+		<div class="col"><span class="num">58</span><span class="elem">Ce</span><span class="atomic">140.12</span></div>
+		<div class="col"><span class="num">59</span><span class="elem">Pr</span><span class="atomic">140.91</span></div>
+		<div class="col"><span class="num">60</span><span class="elem">Nd</span><span class="atomic">144.24</span></div>
+		<div class="col"><span class="num">61</span><span class="elem">Pm</span><span class="atomic">145</span></div>
+		<div class="col"><span class="num">62</span><span class="elem">Sm</span><span class="atomic">150.36</span></div>
+		<div class="col"><span class="num">63</span><span class="elem">Eu</span><span class="atomic">151.96</span></div>
+		<div class="col"><span class="num">64</span><span class="elem">Gd</span><span class="atomic">157.96</span></div>
+		<div class="col"><span class="num">65</span><span class="elem">Tb</span><span class="atomic">158.93</span></div>
+		<div class="col"><span class="num">66</span><span class="elem">Dy</span><span class="atomic">162.50</span></div>
+		<div class="col"><span class="num">67</span><span class="elem">Ho</span><span class="atomic">164.93</span></div>
+		<div class="col"><span class="num">68</span><span class="elem">Er</span><span class="atomic">167.26</span></div>
+		<div class="col"><span class="num">69</span><span class="elem">Tm</span><span class="atomic">168.93</span></div>
+		<div class="col"><span class="num">70</span><span class="elem">Yb</span><span class="atomic">173.05</span></div>
+		<div class="col"><span class="num">71</span><span class="elem">Lu</span><span class="atomic">174.97</span></div>
+		<div class="col"></div>
+	</div>
+	<div class="row">
+		<div class="col borderRless"></div>
+		<div class="col borderRless borderLless"><div class="colspan"><span class="subtit" style="left: 4.8vw">Actinide</span></div></div>
+		<div class="col borderLless"></div>
+		<div class="col"><span class="num">90</span><span class="elem">Th</span><span class="atomic">232.04</span></div>
+		<div class="col"><span class="num">91</span><span class="elem">Pa</span><span class="atomic">231.03</span></div>
+		<div class="col"><span class="num">92</span><span class="elem">U</span><span class="atomic">238.03</span></div>
+		<div class="col"><span class="num">93</span><span class="elem">Np</span><span class="atomic">237</span></div>
+		<div class="col"><span class="num">94</span><span class="elem">Pu</span><span class="atomic">244</span></div>
+		<div class="col"><span class="num">95</span><span class="elem">Am</span><span class="atomic">243</span></div>
+		<div class="col"><span class="num">96</span><span class="elem">Cm</span><span class="atomic">247</span></div>
+		<div class="col"><span class="num">97</span><span class="elem">Bk</span><span class="atomic">247</span></div>
+		<div class="col"><span class="num">98</span><span class="elem">Cf</span><span class="atomic">251</span></div>
+		<div class="col"><span class="num">99</span><span class="elem">Es</span><span class="atomic">252</span></div>
+		<div class="col"><span class="num">100</span><span class="elem">Fm</span><span class="atomic">257</span></div>
+		<div class="col"><span class="num">101</span><span class="elem">Md</span><span class="atomic">258</span></div>
+		<div class="col"><span class="num">102</span><span class="elem">No</span><span class="atomic">259</span></div>
+		<div class="col"><span class="num">103</span><span class="elem">Lr</span><span class="atomic">266</span></div>
+		<div class="col"></div>
+	</div>
+</div>
+</body>
+</html>
